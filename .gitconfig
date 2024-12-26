@@ -1,0 +1,2 @@
+[alias]
+    l = log --pretty=format:\"%C(yellow)%h%Creset %C(green)%ar%Creset %C(bold blue)%an%Creset %C(red)%d%Creset %C(dim white)%s\"

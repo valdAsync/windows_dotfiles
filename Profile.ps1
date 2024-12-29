@@ -76,4 +76,4 @@ function glr {
     git l -30
 }
 
-Invoke-Expression (& { (zoxide init powershell | Out-String) })
+Invoke-Expression (& { (zoxide init --cmd cd powershell | Out-String) })

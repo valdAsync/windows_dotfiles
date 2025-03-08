@@ -24,6 +24,13 @@ set notimeout
 set undolevels=10000
 " Disable line wrap
 set nowrap
+" set easymotion
+set surround
+set multiple-cursors
+set clipboard+=unnamed
+
+" Highlight copied text
+Plug 'machakann/vim-highlightedyank'
 
 " Neovim settings that differ from Vim
 " https://neovim.io/doc/user/diff.html
@@ -119,8 +126,8 @@ nmap [q <Action>(GotoPreviousError)
 " Next Quickfix
 nmap ]q <Action>(GotoNextError)
 " Format
-nmap <leader>cf <Action>(Format)
-vmap <leader>cf <Action>(Format)
+nmap <leader>cf <Action>(ReformatCode)
+vmap <leader>cf <Action>(ReformatCode)
 " Line Diagnostics
 nmap <leader>cd <Action>(ActivateProblemsViewToolWindow)
 " Next Diagnostic
